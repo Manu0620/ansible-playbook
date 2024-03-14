@@ -1,5 +1,5 @@
 - name: Administrar servidores en DigitalOcean
-  hosts: servers
+  hosts: all
   tasks:
     - name: Obtener el nombre del sistema operativo
       ansible.builtin.setup:
