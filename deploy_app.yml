@@ -1,7 +1,7 @@
 - name: Administrar servidores en DigitalOcean
   hosts: all
   vars:
-    ansible_python_interpreter: /usr/loval/lib/python3.8
+    ansible_python_interpreter: /usr/local/lib/python3.8
   tasks:
     - name: Clonar repositorio
       git:
