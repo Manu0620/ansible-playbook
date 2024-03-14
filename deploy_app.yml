@@ -15,6 +15,7 @@
         dest: /home/mmadera/first-rust-app
 
     - name: Build and Start Docker container
+      become: true
       shell: |
         cd /home/mmadera/first-rust-app
         docker-compose down
