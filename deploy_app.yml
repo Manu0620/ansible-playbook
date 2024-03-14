@@ -8,20 +8,7 @@
       # Seleccionamos solo el primer elemento de la lista
       register: os_info
       delegate_to: localhost
-    
-    - name: Arreglar pip
-      apt:
-        name:
-          - python-setuptools
-          - python3-pip
-        state: latest
-        update_cache: yes  # This ensures that the package cache is updated before installing packages
-    
-    - name: Actualizar Ansible utilizando pip
-      pip:
-        name: ansible
-        state: latest
-    
+
     - name: Clonar repositorio
       git:
         repo: https://github.com/Manu0620/first-rust-app
