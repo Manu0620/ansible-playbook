@@ -21,5 +21,5 @@
     - name: 3. Crear e Inicializar el contenedor de docker 
       become: true
       shell: |
-        cd /home/deliodiaz/rustapp-docker
+        cd /home/mmadera/first-rust-app
         docker-compose up -d
