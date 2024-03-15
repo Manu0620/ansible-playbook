@@ -1,3 +1,4 @@
+---
 - name: Administrar servidores en DigitalOcean
   hosts: all
   tasks:
